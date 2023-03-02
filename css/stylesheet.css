@@ -1,0 +1,481 @@
+/* Proudly created by BlexieKing */
+/* https://www.spigotmc.org/members/blexieking.168027 */
+
+
+/* Main */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", Helvetica;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	margin: 25px 0 0 0;
+}
+
+.btn {
+	padding: 10px 25px;
+	background: #4286f4;
+	color: white;
+	display: inline-block;
+	border-radius: 2px;
+	transition-duration: 0.2s;
+}
+
+.btn:hover {
+	background: #2b6ed9;
+}
+
+/* Header */
+
+/*NAV*/
+
+.nav-items a:not(:first-child) {
+	display: none;
+}
+
+.icon {
+	top: 0;
+	right: 0;
+	margin: 30px 30px 0 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.mnav.responsive {
+	margin-top: 70px;
+	display: inline-flex;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	flex-direction: column;
+	color: white;
+	background-color: #23272b;
+	font-size: 1em;
+	padding: 20px;
+}
+
+.i {
+	list-style: none;
+	padding: 5px;
+}
+
+
+.nav-items {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	align-items: center;
+}
+.mnav {
+	display: none;
+}
+.log {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	order: -1;
+}
+.logo {
+	width: 160px;
+	transition-duration: 0.5s;
+	margin: 0 40px;
+}
+.logo:hover {
+	transform: scale(1.05);
+}
+.nav {
+	width: 100%;
+	background-color: #23272b;
+	box-shadow: 0 2px rgba(105, 106, 109, 0.5);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	align-items: center;
+	z-index: 9;
+}
+.h {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-transform: uppercase;
+	width: 100px;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+	background: #4286f4;
+	margin: 0 5px 0 5px;
+	height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: #4286f4;
+	width: 100%;
+	height: 0%;
+	transition: all 0.35s ease-in-out;
+	z-index: -1;
+}
+
+.h:hover .overlay {
+	height: 100%;
+}
+
+
+/*NAV*/
+
+
+.hero {
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+	url("../img/background.png") no-repeat center center;
+	background-size: cover;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	color: white;
+}
+
+
+.info {
+	font-size: 1.3em;
+}
+
+.info span {
+	color: #4286f4;
+	font-weight: bold;
+}
+
+.ip {
+	cursor: pointer;
+}
+
+/* Description */
+
+#description i {
+	color: #222;
+}
+
+#description {
+	display: flex;
+	justify-content: center;
+	margin: 65px 0;
+	flex-wrap: wrap;
+}
+
+#description p {
+	margin: 5px 0 0 0;
+}
+
+#description div {
+	padding: 20px 50px;
+	width: 80%;
+	text-align: center;
+}
+
+#description div i {
+	transition-duration: 0.6s;
+}
+
+#description div i:hover {
+	transform: scale(1.09);
+}
+
+#description div span {
+	font-size: 1.05em;
+	letter-spacing: 1.2px;
+}
+
+/* Our Games */
+
+#games {
+	color: white;
+	background: #24272b;
+}
+
+.gimg {
+	width: 100%;
+	align-self: center;
+	border: 2px solid #111;
+	border-radius: 2px;
+	box-shadow: 0 0 2px #111;
+}
+
+.game {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 40px 50px;
+}
+
+#games h2,
+.game h3 {
+	letter-spacing: 1.2px;
+}
+
+#games h2 {
+	margin: 0;
+	padding: 40px 0 0 0;
+}
+
+.game h3 {
+	font-size: 20px;
+}
+
+.game div {
+	margin: 0 30px;
+	font-size: 19px;
+	line-height: 1.4em;
+}
+
+hr {
+	background: white;
+	height: 1px;
+	width: 70%;
+}
+
+/* Staff */
+.staff-team {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 20px auto 10px auto;
+	width: 95%;
+}
+
+.staff {
+	padding: 20px 0;
+}
+
+.staff h2 {
+	margin-top: 0;
+}
+
+.staff-team > div {
+	padding: 10px;
+	margin: 5px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	transition: all ease 0.3s;
+	width: 100px;
+	font-size: 10px;
+	z-index: 5;
+}
+
+.staff-team > div:hover {
+	transform: scale(1.02);
+}
+
+.staff-team h3 {
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.staff-team img {
+	width: 50px;
+	margin-top: 20px;
+}
+
+.ma {width: 78%; background: #f44141;}
+.mb {width: 96%; background: #33af33;}
+.mc {width: 98%; background: #4286f4;}
+
+.owner,
+.manager,
+.admin {
+	padding: 12px;
+}
+
+.owner {background-color: rgba(244, 65, 65, .5);}
+.manager {background-color: rgba(66, 134, 244, .5);}
+.admin {background-color: rgba(59, 211, 42, .5);}
+
+/* Announcement */
+
+#announcement {
+	text-align: center;
+	color: white;
+}
+
+.an-img {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.35)),
+	url("../img/skyblock-pvp.png") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 50px;
+}
+
+.an-t {
+	font-size: 0.95em;
+	line-height: 1.5em;
+	margin: 30px 30px;
+	background: rgba(255,255,255,0.05);
+	padding: 20px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Contact Us */
+
+#contact {
+	margin: 50px 30px 70px 30px;
+	text-align: center;
+}
+
+#contact a {
+	color: #2b6ed9;
+}
+
+#contact h2 {
+	margin-top: 8px;
+}
+
+#contact p {
+	font-size: 0.9em;
+}
+
+/* Footer */
+
+footer {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: #23272b;
+	padding: 30px 50px;
+}
+
+footer img {
+	width: 170px;
+}
+
+footer a {
+	color: cyan;
+	text-decoration: underline;
+}
+
+
+
+/* RESPONSIVE LAYOUT */
+
+@media(min-width: 900px) {
+	/*NAV*/
+	.nav {
+		position: fixed;
+	}
+	.log {
+		order: 0;
+		width: auto;
+	}
+	.nav-items a:not(:first-child) {
+		display: flex;
+	}
+	.nav-items a:first-child {
+		display: none;
+	}
+	.nav-items {
+		justify-content: center;
+	}
+
+	/*END NAV*/
+
+
+	#contact p {
+		font-size: 1.5em;
+	}
+	.hero {
+		padding-top: 100px;
+		height: 100vh;
+	}
+	.gimg {
+		width: 35%;
+	}
+	.game {
+		flex-wrap: nowrap;
+	}
+	.f, .h, .j, .l {
+		flex-direction: row-reverse;
+	}
+	.game h3 {
+		font-size: 30px;
+	}
+	.game div {
+		line-height: 1.5;
+		font-size: 1.15em;
+	}
+	#description {
+		flex-wrap: nowrap;
+	}
+	#description div {
+		width: 28%;
+	}
+	h2 {
+		font-size: 55px;
+	}
+
+	.h {
+		padding: 0 6px;
+		margin-right: 5px;
+		width: 137px;
+		font-size: 1.2em;
+		background: none;
+		height: 100px;
+	}
+	h1 {
+		font-size: 4.5em;
+	}
+	.staff-team img {
+		width: 170px;
+	}
+	.staff-team > div {
+		padding: 13px;
+		width: auto;
+		font-size: 18px;
+	}
+
+	.staff {
+		padding: 40px 0;
+	}
+
+	.an-t {
+		font-size: 1.15em;
+	}
+
+	footer {
+		justify-content: space-between;
+	}
+}
